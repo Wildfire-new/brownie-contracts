@@ -9,7 +9,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 
 import "./PineappleToken.sol";
 
-// MasterChef is the master of Pineapple. He can make Pineapple and he is a fair guy.
+// MasterChef is the master of Brownies. He can make Brownies and he is a fair guy.
 //
 // Note that it's ownable and the owner wields tremendous power. The ownership
 // will be transferred to a governance smart contract once PIN is sufficiently
@@ -47,7 +47,7 @@ contract MasterChef is Ownable {
     }
 
     // The PIN TOKEN!
-    PineappleToken public pin;
+    BrowniesToken public pin;
     // Dev address.
     address public devaddr;
     // PIN tokens created per block.
@@ -71,7 +71,7 @@ contract MasterChef is Ownable {
     event EmergencyWithdraw(address indexed user, uint256 indexed pid, uint256 amount);
 
     constructor(
-        PineappleToken _pin,
+        BrowniesToken _pin,
         address _devaddr,
         address _feeAddress,
         uint256 _pinPerBlock,
